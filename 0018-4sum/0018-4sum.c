@@ -28,7 +28,7 @@ int** fourSum(int* nums, int numsSize, int target, int* returnSize, int** return
     // sort nums in non-decreasing order
     qsort(nums, numsSize, sizeof(int), cmp);
 
-    ret = (int**)malloc(sizeof(int*) * numsSize * numsSize * numsSize * numsSize);
+    ret = (int**)malloc(sizeof(int*) * numsSize * numsSize * numsSize);
     cnt = 0;
 
     // pick 2 indices
