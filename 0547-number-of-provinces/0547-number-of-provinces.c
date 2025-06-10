@@ -1,4 +1,5 @@
 int parent[201];
+int rank[201];
 
 int getParent(int x)
 {
@@ -13,14 +14,23 @@ void update(int a, int b)
     int pa = getParent(a);
     int pb = getParent(b);
 
-    parent[pa] = pb;
+    if (rank[pa] < rank[pb])
+        parent[pb] = pa;
+    else if (rank[pa] > rank[pb])
+        parent[pa] = pb;
+    else {
+        parent[pa] = pb;
+        rank[pb]++;
+    }
 }
 
 int findCircleNum(int** isConnected, int isConnectedSize, int* isConnectedColSize) {
     int ret = isConnectedSize;
     // init parent[]
-    for (int i=0; i<isConnectedSize; i++)
+    for (int i=0; i<isConnectedSize; i++) {
         parent[i] = i;
+        rank[i] = 0;
+    }
 
     // iterate cities
         // iterate cities
