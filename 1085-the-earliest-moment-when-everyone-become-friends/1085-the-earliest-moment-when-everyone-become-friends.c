@@ -16,11 +16,12 @@ void _union(int x, int y)
     int py = _find(y);
 
     if (rank[px] < rank[py]) {
-        rank[px]++;
-        parent[py] = px;
-    } else if (rank[px] >= rank[py]) {
-        rank[py]++;
         parent[px] = py;
+    } else if (rank[px] > rank[py]) {
+        parent[py] = px;
+    } else {
+        parent[px] = py;
+        rank[py]++;
     }
 }
 
