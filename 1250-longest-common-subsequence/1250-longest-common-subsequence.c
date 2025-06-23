@@ -10,11 +10,8 @@ int longestCommonSubsequence(char* text1, char* text2) {
     int len1 = strlen(text1);
     int len2 = strlen(text2);
 
-    for (int i=0; i<=len1; i++) {
-        for (int j=0; j<=len2; j++) {
-            mem[i][j] = 0;
-        }
-    }
+    for (int i=0; i<=len1; i++) mem[i][len2] = 0;
+    for (int i=0; i<=len2; i++) mem[len1][i] = 0;
 
     for (int j=len2-1; j>=0; j--) {
         for (int i=len1-1; i>=0; i--) {
