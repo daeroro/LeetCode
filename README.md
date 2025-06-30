@@ -8,6 +8,7 @@
 | [0016-3sum-closest](https://github.com/daeroro/LeetCode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/daeroro/LeetCode/tree/master/0018-4sum) |
 | [0075-sort-colors](https://github.com/daeroro/LeetCode/tree/master/0075-sort-colors) |
+| [0300-longest-increasing-subsequence](https://github.com/daeroro/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [1085-the-earliest-moment-when-everyone-become-friends](https://github.com/daeroro/LeetCode/tree/master/1085-the-earliest-moment-when-everyone-become-friends) |
 ## Two Pointers
 |  |
@@ -47,6 +48,7 @@
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/daeroro/LeetCode/tree/master/0070-climbing-stairs) |
+| [0300-longest-increasing-subsequence](https://github.com/daeroro/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [1250-longest-common-subsequence](https://github.com/daeroro/LeetCode/tree/master/1250-longest-common-subsequence) |
 ## Memoization
 |  |
@@ -56,4 +58,8 @@
 |  |
 | ------- |
 | [1250-longest-common-subsequence](https://github.com/daeroro/LeetCode/tree/master/1250-longest-common-subsequence) |
+## Binary Search
+|  |
+| ------- |
+| [0300-longest-increasing-subsequence](https://github.com/daeroro/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 <!---LeetCode Topics End-->
